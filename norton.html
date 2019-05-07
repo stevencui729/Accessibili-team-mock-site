@@ -1700,6 +1700,10 @@
         document.addEventListener("keypress", handleKeypress);
       }
 
+      function goBack() {
+        window.history.back();
+      }
+
       document.addEventListener("DOMContentLoaded", setupEvents);
     </script>
   </head>
@@ -1780,7 +1784,7 @@
         </div>
       </div>
       <div class="nav-wrapper">
-        <button id="primary-button">Back to safety</button>
+        <button id="primary-button" onClick="goBack()">Back to safety</button>
         <button
           id="proceed-button"
           class="secondary-button small-link hidden"
@@ -1799,7 +1803,7 @@
           you should correct your system's clock and then refresh this page.
         </p>
         <p id="final-paragraph">
-          <a href="newpage" id="proceed-link" class="small-link"
+          <a href="badssl.html" id="proceed-link" class="small-link"
             >Proceed to expired.badssl.com (unsafe)</a
           >
         </p>
